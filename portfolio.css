@@ -1,0 +1,18 @@
+body{
+    background-color: aqua;
+}
+p{
+    text-align: justify;
+}
+button{
+    background-color: brown;
+    text-decoration: blue;
+}
+button:hover{
+    text-decoration: blue;
+    size: 120%;
+}
+#keret{
+    background-color: blue;
+    float: left;
+}
