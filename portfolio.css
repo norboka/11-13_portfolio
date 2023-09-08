@@ -3,16 +3,33 @@ body{
 }
 p{
     text-align: justify;
+    display: inline-block;
 }
 button{
     background-color: brown;
-    text-decoration: blue;
+    font-size: medium;
 }
 button:hover{
-    text-decoration: blue;
-    size: 120%;
+    font-size: larger;
+    background-color: #595959;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 400px;
+}
+li{
+    display: inline;
 }
 #keret{
+    display: inline-block;
+    vertical-align:top;
     background-color: blue;
-    float: left;
+    width: 650px;
+    height: 27px;
+    position: fixed;
 }
