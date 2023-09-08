@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <h1>Holczer Norbert</h1>
+    <p>Holczer Norbert a nevem és távközlési technikus ként tanulok a Mikolci SZC Kandó Kálmán Informatikai Technikumban.</p>
+    <p>A szakmát 11-13-ig tanultam(2023/9-2026/6) és ez a portfolio bemutatja hogy miket csináltam ez idő alatt.</p>
+    <p>Az iskolába 2021.09-tol járok,9-10-ig négyszakmát tanultam egyszerre(szoftverfejlesztő,rendszergazda,távközlési technikus,hállózat kiépítő),aztán 10-ben kellet írnuk egy ágazati vizsgán ami alapján eldöntötték hogy mi lesz a szakmánk és nekem távközlési technikust választottak.</p>
+    <p>Az első ágazati vizsgán megbuktam aztán a pótvizsgára rengeteget tanultam és 76 ponttal mentem át.</p>
+    <p>Nekem a távközlésben a programozás része jobban megy mint a kötözgetés és a szerelés.</p>
+    <p>Középiskola után szeretnék elmenni a Miskolci Egyetemre Gépész mérnök vagy Informatikus karra.</p>
+    <p>Angolbol megcsináltam a középszintű nyelvvizsgát és középiskolában az átlagom altalában 4-es körül alakult.</p>
+    <nav id="keret">
+        <button>1.feladatom</button>
+        <button>2.feladatom</button>
+        <button>3.feladatom</button>
+        <button>4.feladatom</button>
+        <button>5.feladatom</button>
+        <button>6.feladatom</button>
+    </nav>
+</body>
+</html>
