@@ -1,26 +1,43 @@
 body{
     background-color: aqua;
+   
 }
 p{
     text-align: justify;
     display: inline-block;
+    width: 100%;
+    text-align: right;
+    padding: right;
+    border-left: 250px;
+}
+h1{
+    width: 100%;
+    text-align: justify;
+    text-align: right;
+    padding: right;
+    margin-right: 100px;
 }
 button{
     background-color: brown;
-    font-size: medium;
+    width: 200px;
+    height: 100px;
 }
 button:hover{
-    font-size: larger;
+    width: 250px;
+    height: 150px;
     background-color: #595959;
+    font-weight: bolder;
+    text-align: center;
 }
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: left;
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 400px;
+    width: 200px;
+    height: 100%;
 }
 li{
     display: inline;
@@ -29,7 +46,7 @@ li{
     display: inline-block;
     vertical-align:top;
     background-color: blue;
-    width: 650px;
-    height: 27px;
+    width: 300px;
+    height: 100%;
     position: fixed;
 }
