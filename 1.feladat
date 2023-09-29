@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astabil multivibrátor</title>
+    <link rel="stylesheet" href="astabilmultivibrátor.css">
+</head>
+<body>
+    <div class="col-12 col-md-4 p-2">
+        <section id="keret">
+            <ul >
+                <li><button onclick="feladat1()">1.feladatom</button></li>
+                <li><button>2.feladatom</button></li>
+                <li><button>3.feladatom</button></li>
+                <li><button>4.feladatom</button></li>
+                <li><button>5.feladatom</button></li>
+                <li><button>6.feladatom</button></li>
+            </ul>
+        </section>
+    </div>
+    <h1>Astabil multivibrátor</h1>
+    <p>Az astabil multivibrátor egy elektronikai áramkör, amely egyfajta oszcillátort alkot. Az oszcillátorok olyan áramkörök, amelyek állandó időközönként váltakozó jeleket vagy hullámformákat generálnak. Az astabil multivibrátor egy speciális típusú oszcillátor, amelynek két stabil állapota van, és a kimeneti jel periódikusan váltakozik az egyik stabil állapotból a másikba.</p>
+    <p>Az astabil multivibrátor két tranzisztort vagy más aktív elemet használ, valamint passzív elemeket, például ellenállásokat és kondenzátorokat. Az áramkör lényege, hogy a két tranzisztor váltakozva vezet, és ezáltal a kimeneti jel periódikusan váltakozik magas és alacsony szintek között.</p>
+    <p>Ezeket az áramköröket gyakran használják impulzusgenerátorokként vagy órajelgenerátorokként különböző elektronikai alkalmazásokban. Az astabil multivibrátorok frekvenciáját és az impulzusok időzítését az áramkör elemeinek értékei szabályozzák, így lehetőség van a kívánt kimeneti jelet létrehozni a tervezett alkalmazáshoz.</p>
+    <p>Bss elektronika kapcsolási rajza alapján csináltam:</p>
+    <img src="data:image/png;base64,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" alt="kapcsolási rajz" title="kapcsolási rajz" width="600px" height="400px">
+    <h5>Sajnos mi nem tudtunk olyan elemeket használni, ami a kapcsolási rajzon van.</h5>
+    <p>Felhasznált alkatrészek:</p>
+    <table>
+        <tr>
+        <th>Ellenállások</th>
+        <th>Tranzisztorok</th>
+        <th>Kondenzátorok</th>
+        <th>Áramellátás</th>
+        </tr>
+        <tr>
+        <td>R1=560 Ohm</td>
+        <td>T1=On semi bc638</td>
+        <td>C1=16V 47Uf</td>
+        <td>U=9V</td>
+        </tr>
+        <tr>
+        <td>R2=30 kOhm</td>
+        <td>T2=On semi bc638</td>
+        <td>C2=16V 47Uf</td>
+        <td></td>
+        </tr>
+        <tr>
+        <td>R3=30 kOhm</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td>R4=560 Ohm</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+    </table>
+    <p>Az áramkörben 4 ellenállást(2x30 kOhm, 2x680 Ohm), 2 led-et, 2 kondenzátort és 2 tranzisztort használtam. A végeredmény az lett, hogy a két led felváltva villogott. Az egész egy 9V-os elemről kapta az áramot.</p>
+    <p>Eddig még csak olyanokat csináltam, hogy 1 db led-et kötöttem be különböző módokon például változtattam az ellenállások számát, így ez elsőre kicsit fejtörést okozott, de sikerült megcsinálnom.Kondenzátort és tranzisztort most használtam először.</p>
+    <h3>Ezt készítettem én:</h3>
+    <img src="img/20230925_125817.jpg" alt="astabil multivibrátor" title="astabil multivibrátor" width="900px" height="900px">
+</body>
+</html>
