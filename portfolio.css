@@ -8,6 +8,7 @@ p{
     width: 100%;
     margin-top: 10px;
     text-align: center;
+    font-size: 15px;
 }
 h1{
     width: 100%;
@@ -18,42 +19,53 @@ h1{
     opacity: 0.8;
     text-align: center;
 }
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background-color: blueviolet;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
 }
-.rólam{
-    font-size: 32px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
+ul{
+  list-style: none;
+  background: #22438c;
 }
-.navbar a{
-    position: relative;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 40px;
+ul li{
+  display: inline-block;
+  position: relative;
 }
-.navbar a::before {
-    content: "";
+ul li a{
+  display: block;
+  padding: 20px 25px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+}
+ul li ul.dropdown li{
+  display: block;
+}
+ul li ul.dropdown{
+  width: 100%;
+  background: #22438c;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+ul li a:hover{
+  background: #112c66;
+}
+ul li:hover ul.dropdown{
+  display: block;
+}
+ul li a::before{
+  content: "";
     position: absolute;
     top: 100%;
     left: 0;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: #750808;
     transition: .4s;
 }
-.navbar a:hover::before {
-    width: 100%;
+ul li a:hover::before{
+  width: 100%;
 }
