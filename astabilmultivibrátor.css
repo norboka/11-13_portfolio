@@ -31,6 +31,7 @@ body{
   ul li{
     display: inline-block;
     position: relative;
+    width: 200px;
   }
   ul li a{
     display: block;
