@@ -31,6 +31,7 @@ ul{
 ul li{
   display: inline-block;
   position: relative;
+  width: 200px;
 }
 ul li a{
   display: block;
@@ -57,7 +58,7 @@ ul li:hover ul.dropdown{
   display: block;
 }
 ul li a::before{
-  content: "";
+    content: "";
     position: absolute;
     top: 100%;
     left: 0;
@@ -68,4 +69,7 @@ ul li a::before{
 }
 ul li a:hover::before{
   width: 100%;
+}
+.kando{
+  padding-right: 100%;
 }
