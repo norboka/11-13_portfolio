@@ -84,3 +84,6 @@ nav{
   nav:hover{
     background-color: #22438c;
   }
+  table, th, td {
+    border: 1px solid black;
+    margin-left: 20px;}
