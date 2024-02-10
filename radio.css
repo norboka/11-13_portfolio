@@ -108,3 +108,12 @@ nav{
     border: 1px solid black;
     margin-left: 20px;
   }
+.hivatkozás{
+  text-decoration: none;
+  color: #9ec2e6;
+}  
+.középre{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
