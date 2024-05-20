@@ -1,10 +1,6 @@
-const btnScrollToTop = document.querySelector("#btnScrollToTop");
-
-btnScrollToTop.addEventListener("click", function () {
-    
+document.getElementById("scrollToBottomBtn").addEventListener("click", function() {
     window.scrollTo({
-        top: 0,
-        left: 0,
+        top: document.body.scrollHeight,
         behavior: "smooth"
     });
 });
