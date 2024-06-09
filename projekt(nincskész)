@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="HU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="projekt.css">
+    <link rel="stylesheet" href="portfolio.js">
+</head>
+<body>
+    <button id="scrollToBottomBtn">
+        <img src="Images/Oldal/noun-learrow-92233.png" alt="nyíl fel" height="50px" width="50px">
+    </button>
+    <script src="portfolio.js"></script>
+   <ul>
+    <li><a href="portfolio.html">Rólam</a></li>
+    <li>
+        <a href="#">11.osztály</a>
+        <ul class="dropdown">
+            <li><a href="astabilmultivibrátor.html">Astabil multivibrátor</a></li>
+            <li><a href="szerencsekerék.html">Szerencsekerék</a></li>
+            <li><a href="villogo.html">Rendörségi villogó</a></li>
+            <li><a href="radio.html">Rádió</a></li>
+            <li><a href="fmradio.html">FM rádió adó</a></li>
+
+        </ul>
+    </li>
+    <li>
+        <a href="#">12.osztály</a>
+        <ul class="dropdown">
+            <li><a href="#">valami</a></li>
+            <li><a href="#">valami</a></li>
+            <li><a href="#">valami</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">13.osztály</a>
+        <ul class="dropdown">
+            <li><a href="#">valami</a></li>
+            <li><a href="#">valami</a></li>
+            <li><a href="#">valami</a></li>
+        </ul>
+    </li>
+    <li id="kando">
+        <img src="Images/kkszki/thumbnail.webp" alt="iskola" title="iskola" height="50px" width="50px">
+    </li>
+   </ul>
+   <h1>Projekt</h1>
+    <p id="link">
+        <a href="https://www.ebay.co.uk/itm/121563820148?itmmeta=01HZYMPRFKWJD38PZ611Q6AXPS&hash=item1c4dc4b074:g:9eQAAOSwa~BYUGS1">Ezt építettem meg.</a>
+    </p>
+    <img src="Images/projekt/20240603_141557.jpg" alt="teteje" height="500px" width="500px">
+    <img src="Images/projekt/20240603_141612.jpg" alt="forrasztás" height="500px" width="500px">
+    <p><b>Jellemzők:</b></p>
+    <p>Bemeneti szint,kimeneti szint, visszhang késleltetési idő és visszacsatolás beállítása</p>
+    <p>40 Kb SRAM az alacsony torzításért és a jó hangminőségért</p>
+    <p>Beépített mikrofon és hangerősítő</p>
+    <p>Line-In és Line-out csatlakozás</p>
+    <p><b>Műszaki adatok:</b></p>
+    <p>Tápellátás: 9V elem</p>
+    <p>Áramfelvétel: 150mA max</p>
+    <p>Késleltetési idő: 80-200 ms</p>
+    <p>Hangszóró kimenet: 500 mW</p>
+    <p>Méretek: 3,35 x 2,76 x 0,78</p>
+    <h3>Ez az útmutató járt még a kithez angolul és ez alapján is építettem meg:</h3>
+    <img src="Images/projekt/Képernyőkép 2024-06-09 173818.png" alt="útmutató" height="800px" width="800px">
+    <nav>
+        <p>Miskolci SZC Kandó Kálmán Informatikai Technikum</p>
+        <p>2024.06.03</p>
+        <p>Holczer Norbert</p>
+    </nav>
+</body>
+</html>
