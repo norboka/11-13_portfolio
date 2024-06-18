@@ -73,18 +73,6 @@ ul li a:hover::before{
 .kando{
   padding-right: 100%;
 }
-#scrollToBottomBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background-color: #1752aa;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 16px;
-}
 nav{
     background-color: #112c66;
     text-align: center;
@@ -111,4 +99,29 @@ nav{
 }
 .link{
     text-decoration: none;
+    color: black;
+}
+#arrow{
+  height: 50px;
+  width: 50px;
+}
+#scroll-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #2d71a8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+#scroll-button span {
+  transition: transform 0.3s;
 }
