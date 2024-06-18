@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="portfolio.js">
 </head>
 <body>
-    <button id="scrollToBottomBtn">
-        <img src="Images/Oldal/noun-learrow-92233.png" alt="nyíl fel" height="50px" width="50px">
+    <button id="scroll-button">
+        <img id="arrow" src="Images/Oldal/noun-arrow-1920802.png" alt="Nyíl" />    
     </button>
     <script src="portfolio.js"></script>
    <ul>
@@ -22,7 +22,7 @@
             <li><a href="villogo.html">Rendörségi villogó</a></li>
             <li><a href="radio.html">Rádió</a></li>
             <li><a href="fmradio.html">FM rádió adó</a></li>
-
+            <li><a href="projekt.html">Projekt</a></li>
         </ul>
     </li>
     <li>
@@ -46,9 +46,7 @@
     </li>
    </ul>
    <h1>Projekt</h1>
-    <p id="link">
-        <a href="https://www.ebay.co.uk/itm/121563820148?itmmeta=01HZYMPRFKWJD38PZ611Q6AXPS&hash=item1c4dc4b074:g:9eQAAOSwa~BYUGS1">Ezt építettem meg.</a>
-    </p>
+    <p><a href="https://www.ebay.co.uk/itm/121563820148?itmmeta=01HZYMPRFKWJD38PZ611Q6AXPS&hash=item1c4dc4b074:g:9eQAAOSwa~BYUGS1" class="link">Ezt építettem meg.</a></p>
     <img src="Images/projekt/20240603_141557.jpg" alt="teteje" height="500px" width="500px">
     <img src="Images/projekt/20240603_141612.jpg" alt="forrasztás" height="500px" width="500px">
     <p><b>Jellemzők:</b></p>
@@ -62,8 +60,172 @@
     <p>Késleltetési idő: 80-200 ms</p>
     <p>Hangszóró kimenet: 500 mW</p>
     <p>Méretek: 3,35 x 2,76 x 0,78</p>
+    <table>
+        <tr>
+            <td>Megnevezés</td>
+            <td>Jelölés</td>
+            <td>Érték/típus</td>
+            <td>Darabszám</td>
+        </tr>
+        <tr>
+            <td>Ellenállás</td>
+            <td>R1,R2,R3.R4</td>
+            <td>10 k</td>
+            <td>4db</td>
+        </tr>
+        <tr>
+            <td>Ellenállás</td>
+            <td>R5,R6,R7</td>
+            <td>100 k</td>
+            <td>3db</td>
+        </tr>
+        <tr>
+            <td>Ellenállás</td>
+            <td>R8</td>
+            <td>1 k</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Ellenállás</td>
+            <td>R9</td>
+            <td>560</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Ellenállás</td>
+            <td>R10</td>
+            <td>330</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Ellenállás</td>
+            <td>R11,R12,R13,R14,R15</td>
+            <td>4,7 k</td>
+            <td>5db</td>
+        </tr>
+        <tr>
+            <td>Ellenállás</td>
+            <td>R16</td>
+            <td>3,3 k</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Ellenállás</td>
+            <td>R17</td>
+            <td>2,7 k</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Ellenállás</td>
+            <td>R18</td>
+            <td>10</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Zenerdióda</td>
+            <td>ZD1</td>
+            <td>5,1 V</td>
+            <td>1 db</td>
+        </tr>
+        <tr>
+            <td>Dióda</td>
+            <td>D1</td>
+            <td>1N4700</td>
+            <td>1 db</td>
+        </tr>
+        <tr>
+            <td>Kondenzátor</td>
+            <td>C1,C2,C3,C4</td>
+            <td>100nF</td>
+            <td>4 db</td>
+        </tr>
+        <tr>
+            <td>Kondenzátor</td>
+            <td>C5</td>
+            <td>39pF</td>
+            <td>1 db</td>
+        </tr>
+        <tr>
+            <td>Kondenzátor</td>
+            <td>C6</td>
+            <td>560pF</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Kondenzátor</td>
+            <td>C7</td>
+            <td>1nF</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Kondenzátor</td>
+            <td>C8,C9,C10,C11</td>
+            <td>6,8nF</td>
+            <td>4db</td>
+        </tr>
+        <tr>
+            <td>Kondenzátor</td>
+            <td>C12</td>
+            <td>33nF</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Kondenzátor</td>
+            <td>C13</td>
+            <td>47nF</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Kapcsoló</td>
+            <td>SW1</td>
+            <td></td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Kondenzátor</td>
+            <td>C14</td>
+            <td>1uF</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Kondenzátor</td>
+            <td>C15,C16,C17,C18,C19,C20,C22</td>
+            <td>10uF</td>
+            <td>7db</td>
+        </tr>
+        <tr>
+            <td>Kondenzátor</td>
+            <td>C21</td>
+            <td>47uF</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Kondenzátor</td>
+            <td>C23,C24</td>
+            <td>100uF</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Áramkör</td>
+            <td>IC1</td>
+            <td>HT8972</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Áramkör</td>
+            <td>IC2</td>
+            <td>LM358</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>Áramkör</td>
+            <td>IC3</td>
+            <td>LM386</td>
+            <td>1db</td>
+        </tr>
+    </table>
     <h3>Ez az útmutató járt még a kithez angolul és ez alapján is építettem meg:</h3>
-    <img src="Images/projekt/Képernyőkép 2024-06-09 173818.png" alt="útmutató" height="800px" width="800px">
+    <img src="Images/projekt/Képernyőkép 2024-06-09 173818.png" alt="útmutató" height="800px" width="100%">
     <nav>
         <p>Miskolci SZC Kandó Kálmán Informatikai Technikum</p>
         <p>2024.06.03</p>
