@@ -75,7 +75,7 @@ body{
   }
   .link{
   text-decoration: none;
-  color: black;
+  color: #4d1055;
   }
   nav{
     background-color: #112c66;
@@ -92,15 +92,27 @@ body{
     border: 1px solid black;
     margin-left: 20px;
   }
-  #scrollToBottomBtn {
+  #scroll-button {
     position: fixed;
-    bottom: 20px;
     right: 20px;
-    padding: 10px 20px;
-    background-color: #1752aa;
+    bottom: 20px;
+    background-color: #2d71a8;
     color: white;
     border: none;
-    border-radius: 50%;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+  }
+  
+  #scroll-button span {
+    transition: transform 0.3s;
+  }
+  #arrow{
+    height: 50px;
+    width: 50px;
   }
