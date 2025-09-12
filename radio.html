@@ -3,14 +3,15 @@
 <head>
     <link rel="icon" type="image/x-icon" href="Images/kkszki/android-chrome-144x144.png" />
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rádió</title>
-    <link rel="stylesheet" href="radio.css">
+    <link rel="stylesheet" href="fm radio.css">
     <link rel="stylesheet" href="portfolio.js">
+    <title>FM rádió adó</title>
 </head>
 <body>
     <button id="scroll-button">
-        <img id="arrow" src="Images/Oldal/noun-arrow-1920802.png" alt="Nyíl" />    
+        <img id="arrow" src="Images/Oldal/noun-arrow-1920802.png" alt="Nyíl" /> 
     </button>
     <script src="portfolio.js"></script>
     <ul>
@@ -23,7 +24,7 @@
                 <li><a href="villogo.html">Rendörségi villogó</a></li>
                 <li><a href="radio.html">Rádió</a></li>
                 <li><a href="fm radio.html">FM rádió adó</a></li>
-                <li><a href="digitális visszhang.html">digitális visszhang</a></li>
+                <li><a href="digitális visszhang.html">Digitális visszhang</a></li>
             </ul>
         </li>
         <li>
@@ -37,82 +38,98 @@
         <li>
             <a href="#">13.osztály</a>
             <ul class="dropdown">
-                <li><a href="#">valami</a></li>
-                <li><a href="#">valami</a></li>
-                <li><a href="#">valami</a></li>
+                <li><a href="dhcpvlanssh.html">dhcp, vlan, ssh</a></li>
             </ul>
             <li id="kando">
                 <img src="Images/kkszki/thumbnail.webp" alt="iskola" title="iskola" height="50px" width="50px">
             </li>
         </li>
        </ul>
-       <h1>Rádió</h1>
-       <p>Maxitronix Electronic Lab 500 in 1 eszközön dolgoztam és ehez tartozik egy könyv amiben rengeteg projekt megtalálható amiket ezen az eszközön meg lehet csinálni,ezek közül én a 2.projectet csináltam meg:A transistor radio(Egy tranzisztor rádió)</p>
-       <p>A Maxitronix Electronic Lab 500 in 1 eszköz újonnan nem vásárolható már meg <a class="hivatkozás" href="http://www.ebay.com/itm/126186020380?hash=item1d6145de1c:g:-okAAOSw435kE4Tq">de használtan még mevásárolható</a></p>
-       <p>Ára használtan:200$ Ami a jelenlegi árfolyamon:71 764Ft</p>
-       <p>Így néz ki az eszköz amin dolgoztunk:</p>
-       <img class="középre" src="Images/rádió/radioeszköz.jpg" alt="eszköz" height="500px" width="500px">
-       <p>Ez a leírás volt hozzá angolul:</p>
-       <img src="Images/rádió/radiole1.jpg" alt="leiras1" width="750px" height="500px">
-       <img src="Images/rádió/radiole2.jpg" alt="leiras2" width="750px" height="500px">
-       <p>Ilyen volt a folyamat:</p>
-       <img src="" alt="video" height="500px" width="500px">
-       <p>Végül amikor a leírásban írtakat megcsináltük rákötöttünk egy hangszórót és meghalgattuk rajta hogy sikerült-e:</p>
-       <img src="Images/rádió/radioeredmeny.jpg" alt="eredmény" height="500px" width="500px">
-       <video alt="video eredmény" height="500px" width="800px" controls>
-        <source src="Images/rádió/radiovid.mp4" type="video/mp4">
-       </video>
-       <p>Ezeket az alkatrészeket használtam:</p>
-       <table>
+    <h1>Fm rádió adó</h1>
+    <p>ez a kapcsolási rajza:</p>
+    <img src="Images/fmrádió/fmradiokapcs.png" alt="áramkör" width="500px" height="500px">
+    <p> <a href="https://www.youtube.com/watch?v=5DbgnXWP2l0&t=4s" class="link">Az összeszereléshez néztem egy videót is és ez segített ahhoz hogy össze tudjam rakni.</a></p>
+    <p>így néz ki amit csináltam:</p>
+    <img src="Images/fmrádió/fmradioered.jpg" alt="eredmény" width="400px" height="400px">
+    <p>Ezeket az alkatrészeket használtam:</p>
+    <table>
         <tr>
             <td>Megnevezés</td>
             <td>Jelölés</td>
             <td>Érték/típus</td>
-            <td>Darabszám</td>
+            <td>darabszám</td>
         </tr>
         <tr>
-            <td>Ellenállás</td>
-            <td>R1</td>
-            <td>22kOhm</td>
+            <td>elem</td>
+            <td></td>
+            <td>9V</td>
             <td>1db</td>
         </tr>
         <tr>
-            <td>Ellenállás</td>
-            <td>R2</td>
-            <td>470kOhm</td>
-            <td>1db</td>
+            <td>ellenállás</td>
+            <td>R1,R2</td>
+            <td>22k</td>
+            <td>2db</td>
         </tr>
         <tr>
-            <td>Ellenállás</td>
+            <td>ellenállás</td>
             <td>R3</td>
-            <td>2,2kOhm</td>
+            <td>12k</td>
             <td>1db</td>
         </tr>
         <tr>
-            <td>Tranzisztor</td>
-            <td>Q1</td>
-            <td>PNP</td>
+            <td>ellenállás</td>
+            <td>R4</td>
+            <td>220</td>
             <td>1db</td>
         </tr>
         <tr>
-            <td>Kondenzátor</td>
+            <td>kondenzátor</td>
             <td>C1</td>
-            <td>0,01 microF</td>
+            <td>470nF</td>
             <td>1db</td>
         </tr>
         <tr>
-            <td>Dióda</td>
-            <td>D1</td>
-            <td>Germánium</td>
+            <td>kondenzátor</td>
+            <td>C2</td>
+            <td>1.5nF</td>
             <td>1db</td>
         </tr>
-       </table>
-       <nav>
+        <tr>
+            <td>kondenzátor</td>
+            <td>C3</td>
+            <td>8.2pF</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>kondenzátor</td>
+            <td>C4</td>
+            <td>12pF</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>kondenzátor</td>
+            <td>C5</td>
+            <td>10nF</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>tekercs</td>
+            <td>L1</td>
+            <td>1qH</td>
+            <td>1db</td>
+        </tr>
+        <tr>
+            <td>tranzisztor</td>
+            <td>T1</td>
+            <td>BC238-BC239</td>
+            <td>1db</td>
+        </tr>
+    </table>
+    <nav>
         <p>Miskolci SZC Kandó Kálmán Informatikai Technikum</p>
-        <p>2024.02.07</p>
+        <p>2024.04.03</p>
         <p>Holczer Norbert</p>
     </nav>
 </body>
 </html>
-
-
