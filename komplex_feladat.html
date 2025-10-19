@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Images/kkszki/android-chrome-144x144.png" />
+    <title>Komplex feladat</title>
+    <link rel="stylesheet" href="komplex_feladat.css">
+    <link rel="stylesheet" href="portfolio.js">
+</head>
+<body>
+    <button id="scroll-button">
+        <img id="arrow" src="Images/Oldal/noun-arrow-1920802.png" alt="Nyíl" />    
+    </button>
+    <script src="portfolio.js"></script>
+    <ul>
+        <li><a href="portfolio.html">Rólam</a></li>
+        <li>
+            <a href="#">11.osztály</a>
+            <ul class="dropdown">
+                <li><a href="astabilmultivibrátor.html">Astabil multivibrátor</a></li>
+                <li><a href="szerencsekerék.html">Szerencsekerék</a></li>
+                <li><a href="villogo.html">Rendörségi villogó</a></li>
+                <li><a href="radio.html">Rádió</a></li>
+                <li><a href="fm radio.html">FM rádió adó</a></li>
+                <li><a href="digitális visszhang.html">digitális visszhang</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">12.osztály</a>
+            <ul class="dropdown">
+                <li><a href="logikai teszter.html">logikai teszter</a></li>
+                <li><a href="óra.html">LED-es órakit</a></li>
+                <li><a href="végerősítő.html">végerősítő</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">13.osztály</a>
+            <ul class="dropdown">
+                <li><a href="dhcpvlanssh.html">dhcp, vlan, ssh</a></li>
+                <li><a href="komplex_feladat.html">komplex feladat</a></li>
+            </ul>
+        </li>
+        <li id="kando">
+            <img src="Images/kkszki/thumbnail.webp" alt="iskola" title="iskola" height="50px" width="50px">
+        </li>
+       </ul>
+       <h1>Komplex feladat (VLAN, DHCP, HSRP, SSH, OSPF)</h1>
+       <h3>Így néz ki a topológia:</h3>
+       <img src="Images/komplex feladat/topológia.png" alt="topológia" title="topológia" width="900px" height="500px" class="középre">
+       <table>
+        <tr>
+            <td>Eszközök</td>
+            <td>IP és hálózati címek</td>
+            <td>VLAN-ok</td>
+            <td>Portok</td>
+        </tr>
+        <tr>
+            <td>Router0</td>
+            <td>192.168.9.1 /25</td>
+            <td>VLAN 9</td>
+            <td>GigabitEthernert 0/0/0.9</td>
+        </tr>
+        <tr>
+            <td>Router0</td>
+            <td>192.168.20.1 / 24</td>
+            <td>VLAN 20</td>
+            <td>GigabitEthernert 0/0/0.20</td>
+        </tr>
+        <tr>
+            <td>Router0</td>
+            <td>10.0.1.1 /30</td>
+            <td></td>
+            <td>Serial 0/1/0</td>
+        </tr>
+        <tr>
+            <td>Router1</td>
+            <td>192.168.9.2 /25</td>
+            <td>VLAN 9</td>
+            <td>GigabitEthernert 0/0/0.9</td>
+        </tr>
+        <tr>
+            <td>Router1</td>
+            <td>192.168.20.2 /24</td>
+            <td>VLAN 20</td>
+            <td>GigabitEthernert 0/0/0.20</td>
+        </tr>
+        <tr>
+            <td>Router1</td>
+            <td>10.0.2.1 /30</td>
+            <td></td>
+            <td>Serial 0/1/0 /30</td>
+        </tr>
+        <tr>
+            <td>Router2</td>
+            <td>192.168.10.1 /24</td>
+            <td></td>
+            <td>GigabitEthernert 0/0/0</td>
+        </tr>
+        <tr>
+            <td>Router2</td>
+            <td>10.0.1.2 /30</td>
+            <td></td>
+            <td>Serial 0/1/0</td>
+        </tr>
+        <tr>
+            <td>Router2</td>
+            <td>10.0.2.2 /30</td>
+            <td></td>
+            <td>Serial 0/1/1</td>
+        </tr>
+        <tr>
+            <td>PC1</td>
+            <td>DHCP</td>
+            <td>VLAN 9</td>
+            <td>FastEthernet0</td>
+        </tr>
+        <tr>
+            <td>PC2</td>
+            <td>DHCP</td>
+            <td>VLAN 20</td>
+            <td>FastEthernet0</td>
+        </tr>
+        <tr>
+            <td>PC3</td>
+            <td>DHCP</td>
+            <td>VLAN 9</td>
+            <td>FastEthernet0</td>
+        </tr>
+        <tr>
+            <td>PC4</td>
+            <td>DHCP</td>
+            <td>VLAN 20</td>
+            <td>FastEthernet0</td>
+        </tr>
+        <tr>
+            <td>PC5</td>
+            <td>192.168.10.5</td>
+            <td></td>
+            <td>FastEthernet0</td>
+        </tr>
+       </table>
+      <h4 class="tolas"><b>Így haladtam:</b></h4>
+      <h4 class="tolas1">-Elsőnek elhelyeztem az eszközöket majd összekötöttem őket.</h4>
+      <h4 class="tolas1">-Megcsináltam a VLAN-okat és beletettem a megfelelő portokat.</h4>
+      <h4 class="tolas1">-Megcsináltam a Router0-án és a Router1-en a HSRP-t.</h4>
+      <h4 class="tolas1">-Beállítottam, hogy a router0 és a router 1 DHCP-vel adjon IP címet a PC1, PC2, PC3 és PC4-nek.</h4>
+      <h4 class="tolas1">-Beállítottam a Router2-n az SSH-t.</h4>
+      <h4 class="tolas1">-Fel IP címeztem a routereken a Serial portokat és megcsináltam a OSPF-et.</h4>
+      <h3>A képeken látható, hogy a gépek kaptak IP címet a megfelelő hálózatból:</h3>
+      <img src="Images/komplex feladat/dhcp1.png" alt="dhcp1" title="dhcp1" width="900px" height="500px" class="középre">
+      <img src="Images/komplex feladat/dhcp2.png" alt="dhcp2" title="dhcp2" width="900px" height="500px" class="középre">
+      <img src="Images/komplex feladat/dhcp3.png" alt="dhcp3" title="dhcp3" width="900px" height="500px" class="középre">
+      <img src="Images/komplex feladat/dhcp4.png" alt="dhcp4" title="dhcp4" width="900px" height="500px" class="középre">
+      <h3>Ez a kép bizonyítja azt, hogy jól megcsináltam a feladatot és a PC1 tud kommunikálni a PC0-val. Leellenőriztem ping és tracert paranccsal is:</h3>
+      <img src="Images/komplex feladat/test.png" alt="test" title="test" width="900px" height="500px" class="középre">
+      <h3>Ezek a képek pedig azt bizonyítják, hogy működik a HSRP:</h3>
+      <img src="Images/komplex feladat/hsrp1.png" alt="hsrp1" title="hsrp1" width="900px" height="300px" class="középre">
+      <img src="Images/komplex feladat/hsrp2.png" alt="hsrp2" title="hsrp2" width="900px" height="300px" class="középre">
+      <h3>Itt pedig az látható, hogy működik az SSH:</h3>
+      <img src="Images/komplex feladat/ssh.png" alt="ssh" title="ssh" width="900px" height="300px" class="középre">
+      <p>Ez számomra egy közepes szintű feladat volt. Megtudtam csinálni, de azért sok időbe telt mire kész lettem</p>
+    <nav>
+        <p>Miskolci SZC Kandó Kálmán Informatikai Technikum</p>
+        <p>2025.10.18</p>
+        <p>Holczer Norbert</p>
+    </nav> 
+</body>
+</html>
